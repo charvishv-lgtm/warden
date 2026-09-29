@@ -471,7 +471,7 @@ with col1:
     if analyze_clicked:
         with st.spinner("Querying Hindsight Memory Bank & Groq LLM..."):
             try:
-                api_url = os.getenv("API_URL", "http://127.0.0.1:8000/analyze")
+                api_url = os.getenv("API_URL", "https://warden-4b2d.onrender.com/analyze")
                 response = requests.post(api_url, json={"identity_name": "payment-service-account"}, timeout=15)
                 if response.status_code == 200:
                     st.session_state.payment_analysis = response.json()
