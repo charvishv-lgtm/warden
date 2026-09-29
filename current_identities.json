@@ -1,0 +1,49 @@
+[
+  {
+    "id": "nh-id-001",
+    "name": "payment-service-account",
+    "type": "IAM Role",
+    "account_id": "123456789012",
+    "arn": "arn:aws:iam::123456789012:role/payment-service-account",
+    "permissions": [
+      "Database Read",
+      "S3 Write",
+      "Admin"
+    ],
+    "status": "Active",
+    "environment": "AWS Production",
+    "description": "Service account initially allocated for Payment Migration Project",
+    "created_date": "2026-01-15",
+    "last_active": "2026-05-18"
+  },
+  {
+    "id": "nh-id-002",
+    "name": "email-notification-bot",
+    "type": "IAM User / Machine Account",
+    "account_id": "123456789012",
+    "arn": "arn:aws:iam::123456789012:user/email-notification-bot",
+    "permissions": [
+      "SES Send"
+    ],
+    "status": "Active",
+    "environment": "AWS Production",
+    "description": "Automated system identity for sending transactional notifications",
+    "created_date": "2025-11-10",
+    "last_active": "2026-09-29"
+  },
+  {
+    "id": "nh-id-003",
+    "name": "analytics-service",
+    "type": "IAM Role",
+    "account_id": "123456789012",
+    "arn": "arn:aws:iam::123456789012:role/analytics-service",
+    "permissions": [
+      "S3 Read"
+    ],
+    "status": "Active",
+    "environment": "AWS Production",
+    "description": "Background analytics ETL ingestion service account",
+    "created_date": "2025-08-20",
+    "last_active": "2026-09-29"
+  }
+]
